@@ -31,5 +31,12 @@ class DataEntriesController < ApplicationController
 
   def notify_third_party_endpoints(data_entry)
     # Implement the logic to send notifications to configured third-party endpoints
+    # endpoints = Rails.configuration.third_party_endpoints
+
+    #  endpoints.each do |name, url|
+    # response = HTTParty.post(url, body: { data_entry: data_entry.to_json }, headers: { 'Authorization' => "Bearer #{ENV['WEBHOOK_TOKEN']}" })
+
+    # Handle the response or errors as needed
+  end
   end
 end
